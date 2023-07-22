@@ -1,0 +1,14 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialmediaBlock {
+  padding: 50px;
+}
+
+.logo {
+  width: 250px;
+}
+
+/*# sourceMappingURL=App.css.map */

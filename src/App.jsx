@@ -1,24 +1,21 @@
-//import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./components/about/about";
+import Home from "./components/home/home";
+import Work from "./components/work/work";
+import Navigation from "./components/everypage/navbar";
+import Quote from "./components/quote/quote";
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './components/home';
-
-function App() {
-  //  const [count, setCount] = useState(0)
-  return (
-    <Router>
-      <nav>
-        <ul>
-          <li>
-            Home
-          </li>
-        </ul>
-      </nav>
-      <Switch>
-        <Route exact path="/" component={Home} />
-      </Switch>
-    </Router>
-  );
+export default function App() {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Navigation />}>
+                    <Route index element={<Home />} />
+                    <Route path="About" element={<About />} />
+                    <Route path="Work" element={<Work />} />
+                    <Route path="Quote" element={<Quote />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
+    );
 }
-
-export default App

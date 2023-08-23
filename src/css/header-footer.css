@@ -1,0 +1,68 @@
+.nav-container {
+  background-image: url("../../src/assets/wood3.png");
+  background-color: #371A12;
+  color: white;
+}
+.nav-container .nav-item {
+  list-style: none;
+}
+.nav-container .nav-link {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#nav-links li {
+  color: #f2f2f2;
+  text-align: center;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+#logo {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 5rem;
+}
+
+#hamburger {
+  color: white;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+}
+
+.toggleOff {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .toggleOff {
+    display: none !important;
+  }
+  #logo {
+    text-align: center;
+  }
+  #hamburger {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=header-footer.css.map */

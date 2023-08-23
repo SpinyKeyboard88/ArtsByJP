@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /src/components/
+Disallow: /src/css/
+Disallow: /src/scss/
+Disallow: /src/assets/
+Disallow: /*.jsx
+Disallow: /*.json
+Disallow: /*.md
+Disallow: /*.scss
+Disallow: /*.html
+Disallow: /*.map
+Disallow: /*.lock
+Disallow: /*.log
+Disallow: /*.DS_Store
+Disallow: /*.git/
+Disallow: /*.hg/
+Disallow: /*.npm/
